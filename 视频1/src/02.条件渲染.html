@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="./lib/bootstrap.min.css" rel="stylesheet">
+    <style>
+        *{
+            font-family: '宋体';
+        }
+        .classA{
+            width: 200px;
+            height: 200px;
+            padding: 50px;
+            background-color: blueviolet
+        }
+        .classB{
+            width: 100px;
+            height: 100px;
+            background-color: #FFF
+        }
+        h4{
+            padding: 12px;
+            color: #F00
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <button class="btn btn-primary" @click="flag = !flag">切换</button><!-- v:on -->
+        <h3 v-if="flag">得不到的永远在骚动</h3>
+        <h3 v-else>为你的烂漫</h3>
+        <h3 v-show="flag">被偏爱的都有恃无恐</h3>
+        <h3 v-show="!flag">争一世无忧</h3>
+        <ul class="list-group">
+            <h4>测试: v-for 遍历数组</h4>
+            <label>
+                    搜索名称关键字：
+                    <input type="text" class="form-control" v-model="keywords" id="search">
+            </label>
+
+            <li class="list-group-item" v-for="(item, index) in search(keywords)" :key="index">
+                <span class="badge">{{ item.msg }}</span>
+                ID:{{ item.id }}&emsp;&emsp;姓名：{{ item.name }}&emsp;&emsp;年龄：{{ item.age }}&emsp;&emsp;性别：{{ item.sex }}&emsp;&emsp;
+                <button @click="deleteList(index)">删除</button>  
+                <button @click="updateList(index, {id:'D123', name: '小奶狗', age: 18, sex: '不详', msg: '暂无'})">更新</button>
+            </li>
+            <h4>测试: v-for 遍历对象</h4>
+            <li class="list-group-item" v-for="(value, key) in person[0]" :key="value">
+                <b>{{ key }}</b>&emsp;&emsp;---&emsp;&emsp;<b>{{ value }}</b>
+            </li>
+        </ul>
+        <label for="">绑定监听</label>
+        <button type="button" class="btn btn-info" @click="Info($event)">Info</button>
+        <button type="button" class="btn btn-danger" @click="Danger('大狗狗', $event)">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-success">Success</button>
+        
+        <div>
+            <h4>事件修饰符</h4>
+            <a href="http://www.baidu.com" @click.prevent="test($event)">去百度</a>
+            <div :class="myClass" @click="output">
+                <div :class="myStyle" @click.stop="input"></div>
+            </div>
+        </div>
+        <label>
+            按键修饰符
+            <input type="text" class="form-control" @keyup.13="enter($event)">
+        </label>
+        <label>
+            按键修饰符
+            <input type="text" class="form-control" @keyup.enter="enter($event)">
+        </label>
+    </div>
+    <script src="./lib/vue-2.4.0.js"></script>
+    <script>
+        const vm = new Vue({
+            el: '#app',
+            data: {
+                myClass: 'classA',
+                myStyle: 'classB',
+                flag: false,
+                keywords: '',
+                person: [
+                    {id:'A123', name: '王福坤', age: 99, sex: '男', msg: '14'},
+                    {id:'B123', name: '大狗狗', age: 99, sex: '男', msg: '8'},
+                    {id:'C123', name: '卢俊辉', age: 99, sex: '男', msg: '7'}
+                ]
+            },
+            methods: {
+                // 删除
+                deleteList (index) {
+                    this.person.splice(index, 1) 
+                },
+                // 更新
+                updateList(index, newPerson){
+                    this.person[index] = newPerson
+                    this.person.splice(index, 1, newPerson)
+                },
+                // 搜索
+                search(keywords){
+                    return this.person.filter((item) => {
+                        //  String.prototype.includes('要包含的   字符串')
+                        if(item.name.includes(keywords)){
+                            return item
+                        }
+                    })
+                },
+                //添加
+                add(){
+                    addPerson = {id: this.id, name: this.name, age: this.age, sex: this.sex, msg: this.msg}
+                    this.person.push(addPerson)
+
+                },
+                // 提示
+                Info(event){
+                    alert(event.target.innerHTML)
+                },
+                Danger(info, event){
+                    alert(info + '+' + event.target.innerHTML)
+                },
+                test(event){
+                    alert(event.target.innerHTML)
+                },
+                input(){
+                    alert('input')
+                },
+                output(){
+                    alert('output')
+                },
+                // enter
+                enter(event){
+                    alert(event.target.value)
+                }
+            }, 
+        })
+    </script>
+</body>
+</html>

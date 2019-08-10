@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="./lib/bootstrap.min.css" rel="stylesheet">
+    <style>
+        *{
+            font-family: '宋体';
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <button @click="destroyVm">destroy Vm</button>
+        <h3 v-show="isShow">{{ msg }}</h3>
+    </div>
+    <script src="./lib/vue-2.4.0.js"></script>
+    <script>
+        const vm = new Vue({
+            el: '#app',
+            data: {
+                msg: 'Epiphany',
+                isShow: true
+            },
+            methods: {
+                show(content){
+                    console.log(content)
+                },
+                destroyVm(){
+                    this.$destroy();
+                }
+            },
+            mounted() {
+                this.IntervalId = setInterval(() => {
+                    console.log('大狗狗');
+                    this.isShow = !this.isShow
+                }, 1000);
+            },
+            beforeDestroy() {
+                // 清除定时器
+                clearInterval(this.IntervalId);
+            },
+        })
+    </script>
+</body>
+</html>

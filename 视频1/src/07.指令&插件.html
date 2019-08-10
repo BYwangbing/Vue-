@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: '宋体';
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <button @click="hint">hint事件</button>
+        <h4 ref="reference">明知不可为之而为之</h4>
+        <p v-upper-text="msg"></p>
+        <p v-lower-text="infom" v-font-size></p>
+        <p v-my-directive="msg"></p>
+    </div>
+    <script src="./lib/vue-2.4.0.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./lib/vue-myPlugin.js"></script>
+    <script>
+        // 使用声明插件
+        Vue.use(MyPlugin);
+        
+        Vue.myGlobalMethod();
+          
+        // 定义全局指令
+        Vue.directive('upper-text', function(el, binding){
+            console.log(el,binding);
+            el.textContent = binding.value.toUpperCase();
+        });
+        var vm = new Vue({
+            el: '#app',
+            data: {
+                date: new Date(),
+                msg: 'BY&kf',
+                infom: 'BY@kf',
+            },
+            methods: {
+                hint(){
+                    alert(this.$refs.reference.textContent)
+                }
+            },
+            directives: {
+                'lower-text':  function(el,binding){
+                    console.log(binding);
+                    el.textContent = binding.value.toLowerCase();
+                },
+                'font-size': {
+                    bind: function(el, binding){
+                        el.style.fontSize = '32px';
+                    }
+                }
+            }
+        });
+        // vm实例调用此方法
+        vm.$myMethod();
+        // new Object();  
+    </script>
+</body>
+</html>

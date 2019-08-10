@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: '宋体';
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <h2>显示格式化的日期时间</h2>
+        <p>{{ date }}</p>
+        <p>完整版： {{ date | dateString1 }}</p>
+        <p>年月日： {{ date | dateString1('YYYY-MM-DD') }}</p>
+        <p>时分秒： {{ date | dateString1('HH:mm:ss') }}</p>
+        <p class="date">完整版： {{ date | dateString2 }}</p>
+    </div>
+    <script src="./lib/vue-2.4.0.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/moment.js/2.24.0/moment.min.js"></script>
+    <script>
+        // 自定义过滤器
+        Vue.filter('dateString1', function(value, format){
+            // return moment().format('MMMM Do YYYY, h:mm:ss a');
+            return moment().format(format || 'YYYY-MM-DD HH:mm:ss')
+        });
+        Vue.filter('dateString2', function(value){
+            var int=self.setInterval(() => {
+                // var date = new Date().toLocaleTimeString();
+                var date = moment().format('YYYY-MM-DD HH:mm:ss');
+                $('.date').text("完整版：" + date)
+            },1000);
+        })
+        var vm = new Vue({
+            el: '#app',
+            data: {
+                date: new Date(),
+            },
+            methods: {
+
+            },
+        })
+
+        // var int=self.setInterval("clock()",1000);
+        // function clock(){
+        //     var date = new Date().toLocaleTimeString();
+        //     document.getElementById("clock").value = date;
+        // }
+    </script>
+</body>
+</html>
