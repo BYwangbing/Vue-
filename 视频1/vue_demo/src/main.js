@@ -9,3 +9,4 @@ new Vue({
   components: { App },
   template: '<App/>'
 });
+/*你好世界*/
