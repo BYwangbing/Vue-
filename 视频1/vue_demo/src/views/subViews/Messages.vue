@@ -7,6 +7,8 @@
                 <button @click="replaceShow(m.id)">replace查看</button>
             </li>
         </ul>
+        <button @click="$router.back()" class="btn btn-success">$router.back()返回</button>
+        <button @click="$router.go(-1)" class="btn btn-success">$router.go(-1)返回</button>
         <hr>
         <router-view></router-view>
     </div>
