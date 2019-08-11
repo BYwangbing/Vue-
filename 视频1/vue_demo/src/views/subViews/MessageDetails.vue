@@ -30,14 +30,16 @@
                     { id: 7, title: 'messages_007', content:'messages_007 content...' },
                 ];
                 this.allDetailMessages = allDetailMessages;
-                const id = this.$route.params.id*1;
+                const id = this.$route.params.id * 1;
                 this.messageDetail = allDetailMessages.find( detail => detail.id === id);
             }, 1000)
         },
         watch: {
             $route: function (value) {
-                const id = value.params.id*1;
-                this.messageDetail = this.allDetailMessages.find( detail => detail.id === id);
+                const id = value.params.id * 1;
+                this.messageDetail = this.allDetailMessages.find( function (detail) {
+                     return  detail.id === id
+                });
             }
         }
     }

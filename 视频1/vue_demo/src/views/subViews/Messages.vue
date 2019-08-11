@@ -3,6 +3,8 @@
         <ul class="list-group">
             <li class="list-group-item" v-for="m in messages" :key="m.id">
                 <router-link :to="`/home/messages/messageDetails/${m.id}`">{{ m.title }}</router-link>
+                <button @click="pushShow(m.id)">push查看</button>
+                <button @click="replaceShow(m.id)">replace查看</button>
             </li>
         </ul>
         <hr>
@@ -27,6 +29,15 @@
                 ];
                 this.messages = message;
             }, 1000)
+        },
+        methods: {
+            pushShow(id) {
+                this.$router.push(`/home/messages/messageDetails/${id}`)
+            },
+            replaceShow(id) {
+                this.$router.replace(`/home/messages/messageDetails/${id}`)
+            }
+
         }
     }
 </script>

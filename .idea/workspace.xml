@@ -2,25 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5627764b-6a96-46c3-9450-6bd15a86543b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/视频1/vue_demo/src/router/router.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/视频1/vue_demo/src/views/About.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/视频1/vue_demo/src/views/Home.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/视频1/vue_demo/src/views/subViews/MessageDetails.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/视频1/vue_demo/src/views/subViews/Messages.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/视频1/vue_demo/src/views/subViews/News.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/视频1/src/lib/vue-2.4.0.js" beforeDir="false" afterPath="$PROJECT_DIR$/视频1/src/lib/vue-2.4.0.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/视频1/vue_demo/build/webpack.prod.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/视频1/vue_demo/build/webpack.prod.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/视频1/vue_demo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/视频1/vue_demo/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/视频1/vue_demo/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/视频1/vue_demo/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/视频1/vue_demo/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/视频1/vue_demo/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/视频1/vue_demo/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/视频1/vue_demo/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/视频1/vue_demo/src_comments/components/Item.vue" beforeDir="false" afterPath="$PROJECT_DIR$/视频1/vue_demo/src_comments/components/Item.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/视频1/vue_demo/src_search/components/Main.vue" beforeDir="false" afterPath="$PROJECT_DIR$/视频1/vue_demo/src_search/components/Main.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/视频1/vue_demo/test/unit/specs/HelloWorld.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/视频1/vue_demo/test/unit/specs/HelloWorld.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/视频1/vue_demo/src/views/subViews/MessageDetails.vue" beforeDir="false" afterPath="$PROJECT_DIR$/视频1/vue_demo/src/views/subViews/MessageDetails.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/视频1/vue_demo/src/views/subViews/Messages.vue" beforeDir="false" afterPath="$PROJECT_DIR$/视频1/vue_demo/src/views/subViews/Messages.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -32,24 +16,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/视频1/vue_demo/src/views/subViews/Messages.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="2" column="30" lean-forward="true" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/视频1/vue_demo/src/router/router.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1120">
-              <caret line="40" column="47" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="47" />
+            <state relative-caret-position="140">
+              <caret line="37" column="36" lean-forward="true" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="36" />
               <folding>
-                <element signature="e#51#72#0" expanded="true" />
-                <element signature="e#252#286#0" expanded="true" />
+                <element signature="e#392#468#0" />
+                <element signature="e#488#861#0" />
               </folding>
             </state>
           </provider>
@@ -58,35 +33,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/视频1/vue_demo/src/views/subViews/MessageDetails.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
+            <state relative-caret-position="168">
               <caret line="36" column="16" lean-forward="true" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/视频1/vue_demo/src/App.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="21" column="65" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/视频1/vue_demo/src/views/About.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/视频1/src/01.index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-67">
-              <caret line="72" column="25" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -156,10 +104,10 @@
         <option value="$PROJECT_DIR$/视频1/vue_demo/src/views/subViews/News.vue" />
         <option value="$PROJECT_DIR$/视频1/vue_demo/src/router/router.js" />
         <option value="$PROJECT_DIR$/视频1/vue_demo/src/views/Home.vue" />
-        <option value="$PROJECT_DIR$/视频1/vue_demo/src/views/subViews/Messages.vue" />
-        <option value="$PROJECT_DIR$/视频1/vue_demo/src/views/subViews/MessageDetails.vue" />
         <option value="$PROJECT_DIR$/视频1/vue_demo/src/views/About.vue" />
         <option value="$PROJECT_DIR$/视频1/vue_demo/src/App.vue" />
+        <option value="$PROJECT_DIR$/视频1/vue_demo/src/views/subViews/Messages.vue" />
+        <option value="$PROJECT_DIR$/视频1/vue_demo/src/views/subViews/MessageDetails.vue" />
       </list>
     </option>
   </component>
@@ -175,6 +123,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -191,12 +140,6 @@
               <item name="Vue 尚硅谷" type="b2602c69:ProjectViewProjectNode" />
               <item name="Vue 尚硅谷" type="462c0819:PsiDirectoryNode" />
               <item name="视频1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Vue 尚硅谷" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vue 尚硅谷" type="462c0819:PsiDirectoryNode" />
-              <item name="视频1" type="462c0819:PsiDirectoryNode" />
               <item name="vue_demo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -205,14 +148,6 @@
               <item name="视频1" type="462c0819:PsiDirectoryNode" />
               <item name="vue_demo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Vue 尚硅谷" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vue 尚硅谷" type="462c0819:PsiDirectoryNode" />
-              <item name="视频1" type="462c0819:PsiDirectoryNode" />
-              <item name="vue_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="router" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Vue 尚硅谷" type="b2602c69:ProjectViewProjectNode" />
@@ -231,18 +166,10 @@
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="subViews" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Vue 尚硅谷" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vue 尚硅谷" type="462c0819:PsiDirectoryNode" />
-              <item name="视频1" type="462c0819:PsiDirectoryNode" />
-              <item name="vue_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src_resource" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -318,7 +245,8 @@
       <workItem from="1565338214577" duration="5666000" />
       <workItem from="1565351235872" duration="21598000" />
       <workItem from="1565414575718" duration="772000" />
-      <workItem from="1565442304092" duration="18845000" />
+      <workItem from="1565442304092" duration="26534000" />
+      <workItem from="1565528344305" duration="2846000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1565414229366</created>
@@ -327,11 +255,18 @@
       <option name="project" value="LOCAL" />
       <updated>1565414229366</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="路由 使用、嵌套、缓存、传参">
+      <created>1565518477144</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1565518477144</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100171000" />
+    <option name="totallyTimeSpent" value="110706000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -349,10 +284,9 @@
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.16776751" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="CSS Styles" weight="0.32960895" />
       <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.4993395" visible="true" weight="0.35055867" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5006605" side_tool="true" weight="0.5760112" />
-      <window_info anchor="bottom" id="Version Control" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="2" weight="0.32960895" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.3282123" />
@@ -360,7 +294,8 @@
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="10" weight="0.32914925" />
+      <window_info anchor="bottom" id="TODO" order="10" weight="0.3282123" />
+      <window_info active="true" anchor="bottom" id="CSS Styles" order="11" weight="0.32960895" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -371,7 +306,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="第一次提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="第一次提交" />
+    <MESSAGE value="路由 使用、嵌套、缓存、传参" />
+    <option name="LAST_COMMIT_MESSAGE" value="路由 使用、嵌套、缓存、传参" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/视频1/src/03.表单输入绑定.html">
@@ -491,16 +427,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/视频1/vue_demo/src/components/Add.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/视频1/vue_demo/src/components/Add.vue" />
     <entry file="file://$PROJECT_DIR$/视频1/vue_demo/src_search/components/Main.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
@@ -508,14 +435,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/视频1/vue_demo/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-103" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json" />
     <entry file="file://$PROJECT_DIR$/视频1/vue_demo/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
@@ -523,9 +443,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/视频1/vue_demo/src/views/subViews/sa.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/视频1/vue_demo/src/views/subViews/sa.js" />
     <entry file="file://$PROJECT_DIR$/视频1/vue_demo/src_comments/components/List.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="56">
@@ -597,30 +515,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/视频1/vue_demo/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/视频1/vue_demo/src/views/About.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/视频1/src/01.index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-67">
+        <state relative-caret-position="2016">
           <caret line="72" column="25" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/视频1/vue_demo/src/views/subViews/Messages.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="2" column="30" lean-forward="true" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/视频1/vue_demo/src/views/subViews/MessageDetails.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="36" column="16" lean-forward="true" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/视频1/vue_demo/src/router/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1120">
+        <state relative-caret-position="359">
           <caret line="40" column="47" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="47" />
           <folding>
             <element signature="e#51#72#0" expanded="true" />
@@ -629,17 +550,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/视频1/vue_demo/src/views/About.vue">
+    <entry file="file://$PROJECT_DIR$/视频1/vue_demo/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        <state relative-caret-position="467">
+          <caret line="25" column="16" lean-forward="true" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/视频1/vue_demo/src/App.vue">
+    <entry file="file://$PROJECT_DIR$/视频1/vue_demo/src/views/subViews/MessageDetails.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="21" column="65" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
+        <state relative-caret-position="168">
+          <caret line="36" column="16" lean-forward="true" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/视频1/vue_demo/src/views/subViews/Messages.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="37" column="36" lean-forward="true" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="36" />
+          <folding>
+            <element signature="e#392#468#0" />
+            <element signature="e#488#861#0" />
+          </folding>
         </state>
       </provider>
     </entry>
