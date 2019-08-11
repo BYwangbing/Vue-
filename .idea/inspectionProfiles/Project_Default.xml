@@ -4,7 +4,7 @@
     <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="myValues">
         <value>
-          <list size="26">
+          <list size="28">
             <item index="0" class="java.lang.String" itemvalue="v-text" />
             <item index="1" class="java.lang.String" itemvalue="v-html" />
             <item index="2" class="java.lang.String" itemvalue="v-once" />
@@ -31,6 +31,8 @@
             <item index="23" class="java.lang.String" itemvalue=":key" />
             <item index="24" class="java.lang.String" itemvalue=":href" />
             <item index="25" class="java.lang.String" itemvalue=":src" />
+            <item index="26" class="java.lang.String" itemvalue="scope" />
+            <item index="27" class="java.lang.String" itemvalue="scoped" />
           </list>
         </value>
       </option>
@@ -39,7 +41,7 @@
     <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="myValues">
         <value>
-          <list size="31">
+          <list size="35">
             <item index="0" class="java.lang.String" itemvalue="nobr" />
             <item index="1" class="java.lang.String" itemvalue="noembed" />
             <item index="2" class="java.lang.String" itemvalue="comment" />
@@ -71,6 +73,10 @@
             <item index="28" class="java.lang.String" itemvalue=":is" />
             <item index="29" class="java.lang.String" itemvalue=":key" />
             <item index="30" class="java.lang.String" itemvalue="mt-button" />
+            <item index="31" class="java.lang.String" itemvalue="router-link" />
+            <item index="32" class="java.lang.String" itemvalue="router-view" />
+            <item index="33" class="java.lang.String" itemvalue="li" />
+            <item index="34" class="java.lang.String" itemvalue="keep-alive" />
           </list>
         </value>
       </option>

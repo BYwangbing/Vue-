@@ -10,7 +10,7 @@
                 </a>
                 <p class="card-text">{{ user.username }}</p>
             </div>
-    </div>
+        </div>
     </div>
 </template>
 

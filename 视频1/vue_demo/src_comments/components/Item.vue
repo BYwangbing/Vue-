@@ -5,7 +5,6 @@
       <span class="badge">评论人：{{ subData.name }}</span>
       {{ subData.content }}
     </li>
-
   </div>
 </template>
 
