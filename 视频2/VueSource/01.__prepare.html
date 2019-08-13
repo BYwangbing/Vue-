@@ -1,0 +1,106 @@
+<!--
+    @author BY
+    @date 2019-08-12 09:11
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="test">管他熙熙攘攘阳关道，我偏要一条独木桥走到黑</div>
+    <div>
+        <ul id="fragment_test">
+            <li>舅舅</li>
+            <li>小天使</li>
+            <li>大小姐</li>
+        </ul>
+    </div>
+</body>
+<script type="text/javascript">
+    // 1. [].slice.call(lis): 根据伪数组生成对应的真数组
+    const lis = document.getElementsByTagName('li');
+    console.log(lis instanceof Object, lis instanceof Array, lis[1].innerHTML, lis.forEach);// lis是伪数组(是一个特别的对象, length和数值下标属性)
+    const list = Array.prototype.slice.call(lis);
+    console.log(list instanceof Array, list.forEach);
+
+    // 2. node.nodeType: 得到节点类型
+    const elementNode = document.getElementById('test');
+    const attrNode = elementNode.getAttributeNode('id');
+    const textNode = elementNode.firstChild;
+    console.log(elementNode.nodeType, attrNode.nodeType, textNode.nodeType);
+
+    // 3. Object.defineProperty(obj, propertyName, {}): 给对象添加属性(指定描述符)
+/*
+    属性描述符:
+        1. 数据描述符
+            configurable:是否可以重新定义
+            enumerable:是否可以枚举，默认false
+            value:初始值
+            writable:是否可以修改属性值
+        2. 访问描述符
+            get:回调函数，根据其他相关属性，动态计算得到当前属性值
+            set:回调函数，监视当前属性值的变化，更新其他相关属性值
+ */
+    const obj = {
+        firstName: 'A',
+        lastName: 'B'
+    };
+    Object.defineProperty(obj, 'fullName', {
+        // 当读取对象此属性值时自动调用, 将函数返回的值作为属性值, this为obj
+        get() {
+            return this.firstName + "-" + this.lastName
+        },
+        // 当修改了对象的当前属性值时自动调用, 监视当前属性值的变化, 修改相关的属性, this为obj
+        set(value) {
+            const names = value.split('-');
+            this.firstName = names[0];
+            this.lastName = names[1];
+        },
+    });
+    console.log(obj.fullName); // A-B
+    obj.fullName = 'C-D';
+    console.log(obj.firstName, obj.lastName); // C D
+
+    Object.defineProperty(obj, 'fullName2', {
+        configurable: false, //是否可以重新define
+        enumerable: true, // 是否可以枚举(for..in / keys())
+        value: 'A-B',
+        writable: false // value是否可以修改
+    });
+
+    // 4. Object.keys(obj): 得到对象自身可枚举属性组成的数组
+    const names = Object.keys(obj);
+    console.log(names);
+
+    // 5. obj.hasOwnProperty(prop): 判断prop是否是obj自身的属性
+    console.log(obj.hasOwnProperty('fullName'), obj.hasOwnProperty('toString'));
+
+    // 6. DocumentFragment: 文档碎片(高效批量更新多个节点)
+    /*
+        <ul id="fragment_test">
+            <li>舅舅</li>
+            <li>小天使</li>
+            <li>大小姐</li>
+        </ul>
+    */
+    const ul = document.getElementById('fragment_test');
+    // 1. 创建fragment
+    const fragment = document.createDocumentFragment();
+    // 2. 取出ul中所有子节点取出保存到fragment
+    let child;
+    while(child = ul.firstChild) { // 一个节点只能有一个父亲
+        fragment.appendChild(child)  // 先将child从ul中移除, 添加为fragment子节点
+    }
+    // 3. 更新fragment中所有li的文本
+    console.log(fragment.childNodes instanceof Array); //fragment.childNodes伪数组
+    Array.prototype.slice.call(fragment.childNodes).forEach(node => {
+        if(node.nodeType === 1) { // 元素节点 <li>
+            node.textContent = 'BY&K'
+        }
+    });
+    // 4. 将fragment插入ul
+    ul.appendChild(fragment)
+</script>
+</html>
