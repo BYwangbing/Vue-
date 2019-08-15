@@ -1,13 +1,20 @@
-
 import Vue from 'vue'
-import App from './App'
+import App from './app'
 import store from './store'
 
-/* eslint-disable no-new */
+import './base.css'
+
+// new Vue({
+//     el: '#app',
+//     components: {
+//         App
+//     },
+//     template: '<App/>',
+//     store
+// });
+
 new Vue({
     el: '#app',
-    components: { App },
-    template: '<App/>',
+    render: h => h(App),
     store
-    // 注册上vuex的store: 所有组件对象都多一个属性$store
 });

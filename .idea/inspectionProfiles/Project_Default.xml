@@ -41,7 +41,7 @@
     <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="myValues">
         <value>
-          <list size="35">
+          <list size="39">
             <item index="0" class="java.lang.String" itemvalue="nobr" />
             <item index="1" class="java.lang.String" itemvalue="noembed" />
             <item index="2" class="java.lang.String" itemvalue="comment" />
@@ -77,6 +77,10 @@
             <item index="32" class="java.lang.String" itemvalue="router-view" />
             <item index="33" class="java.lang.String" itemvalue="li" />
             <item index="34" class="java.lang.String" itemvalue="keep-alive" />
+            <item index="35" class="java.lang.String" itemvalue="tode-footer" />
+            <item index="36" class="java.lang.String" itemvalue="todeheader" />
+            <item index="37" class="java.lang.String" itemvalue="todelist" />
+            <item index="38" class="java.lang.String" itemvalue="todoitem" />
           </list>
         </value>
       </option>

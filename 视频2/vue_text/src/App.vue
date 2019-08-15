@@ -1,45 +1,31 @@
 <template>
-  <div>
-      <p>click {{ $store.state.count }} times, count is {{ evenOrOdd }}</p>
-      <button @click="increment">+</button>
-      <button @click="decrement">-</button>
-      <button @click="incrementIfOdd">increment if odd</button>
-      <button @click="incrementAsync">increment async</button>
+  <div id="root">
+    <div class="todo-container">
+      <div class="todo-wrap">
+        <TodeHeader></TodeHeader>
+        <TodeList></TodeList>
+        <Tode-footer></Tode-footer>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-    import { mapState, mapGetters, mapActions } from 'vuex'
+    import TodeHeader from './components/TodoHeader'
+    import TodeList from './components/TodoList'
+    import TodeFooter from './components/TodoFooter'
     export default {
-        mounted() {
-            console.log(this.$store);
-        },
-        computed: {
-            // count() {
-            //     return this.$store.state.count
-            // },
-            // evenOrOdd() {
-            //     return this.$store.getters.evenOrOdd
-            // }
-            ...mapGetters(['evenOrOdd']),
 
-            ...mapState(['count'])
+        mounted() {
+            // 发送命令给actions: 异步获取保存TODO数据并显示
+            this.$store.dispatch('reqTodo')
         },
-        methods: {
-            // increment() {
-            //     this.$store.dispatch('increment')
-            // },
-            // decrement() {
-            //     this.$store.dispatch('decrement')
-            // },
-            // incrementIfOdd() {
-            //     this.$store.dispatch('incrementIfOdd')
-            // },
-            // incrementAsync() {
-            //     this.$store.dispatch('incrementAsync')
-            // },
-            ...mapActions(['increment', 'decrement', 'incrementIfOdd', 'incrementAsync'])
-        }
+
+        components: {
+            TodeHeader,
+            TodeList,
+            TodeFooter,
+        },
     }
 </script>
 
